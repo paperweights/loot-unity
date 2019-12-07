@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Spawn Point
   layers:
   - Default
   - TransparentFX
@@ -44,9 +45,18 @@ TagManager:
   - name: Floor
     uniqueID: 2257151159
     locked: 0
+  - name: Shadows
+    uniqueID: 472869615
+    locked: 0
   - name: Objects
     uniqueID: 282916497
     locked: 0
+  - name: Particle
+    uniqueID: 822210593
+    locked: 0
   - name: Darkness
     uniqueID: 617538501
+    locked: 0
+  - name: Ui
+    uniqueID: 2583204861
     locked: 0

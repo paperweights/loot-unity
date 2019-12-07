@@ -88,9 +88,9 @@ Shader "Sprites/GreenIgnore"
 
             fixed4 frag(v2f IN) : SV_Target
             {
-                fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
                 fixed4 bgColour = tex2Dproj(_BackgroundTexture, IN.grabPos);
-                c.r = bgColour.r * c.r;
+                fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
+                c.rgb *= c.a;
                 c.g = bgColour.g;
                 return c;
             }

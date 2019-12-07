@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _layerColours:
-  - {r: 0, g: 0, b: 0, a: 0.16470589}
-  - {r: 0, g: 0, b: 0, a: 0.16470589}
+  - {r: 0, g: 0, b: 0, a: 0.23921569}
+  - {r: 0, g: 0, b: 0, a: 0.5254902}
   - {r: 0, g: 0, b: 0, a: 0.16470589}
   - {r: 0, g: 0, b: 0, a: 0.16470589}
   - {r: 0, g: 0, b: 0, a: 0.16470589}
