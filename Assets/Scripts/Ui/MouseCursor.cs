@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Ui
@@ -7,8 +8,14 @@ namespace Ui
     {
         [SerializeField] private float _hideTime;
         [SerializeField] private Image _cursorImage;
-        [SerializeField] private Camera _camera;
+        private Camera _camera;
         private float _timeHidden;
+
+        private void Awake()
+        {
+            _camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        }
+
         private void Update()
         {
             var mouseDelta = Mathf.Abs(Input.GetAxis("Mouse X")) + Mathf.Abs(Input.GetAxis("Mouse Y"));

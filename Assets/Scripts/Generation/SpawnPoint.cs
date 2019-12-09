@@ -51,7 +51,7 @@ namespace Generation
             var randomRoomIndex = Random.Range(0, roomsPrefabs.Length);
             var randomRoom = roomsPrefabs[randomRoomIndex];
             var t = transform;
-            Instantiate(randomRoom, t.position, Quaternion.identity, t);
+            Instantiate(randomRoom, t.position, Quaternion.identity, t.parent.transform);
             _hasSpawned = true;
         }
 

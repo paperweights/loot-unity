@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 2
   _currentHealth: 0
-  _healthDisplay: {fileID: 0}
+  _invincibilityTime: 2
 --- !u!114 &5429940421199709680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,8 +214,6 @@ MonoBehaviour:
   _switchLeft: 113
   _switchRight: 101
   _dropKey: 102
-  _itemDisplay: {fileID: 0}
-  _coinDisplay: {fileID: 0}
   _droppedItemPrefab: {fileID: 6298339766256680584, guid: 2e827c4321e38e0498ce12b849f317fa,
     type: 3}
 --- !u!1001 &5333802034938152226

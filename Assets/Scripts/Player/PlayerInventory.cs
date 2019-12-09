@@ -14,9 +14,9 @@ namespace Player
         [SerializeField] private KeyCode _switchLeft = KeyCode.Q;
         [SerializeField] private KeyCode _switchRight = KeyCode.E;
         [SerializeField] private KeyCode _dropKey = KeyCode.F;
-        [SerializeField] private ItemDisplay _itemDisplay;
-        [SerializeField] private CoinDisplay _coinDisplay;
         [SerializeField] private GameObject _droppedItemPrefab;
+        private ItemDisplay _itemDisplay;
+        private CoinDisplay _coinDisplay;
         private float _timeHeld;
 
         public int GetSelectedItem()
@@ -30,6 +30,8 @@ namespace Player
 
         private void Start()
         {
+            _itemDisplay = FindObjectOfType<ItemDisplay>();
+            _coinDisplay = FindObjectOfType<CoinDisplay>();
             _itemDisplay.UpdateContainers(_inventoryObject.GetItems().Count);
             _itemDisplay.UpdateSelectedItem(_selectedItem);
             _itemDisplay.UpdateItems(_inventoryObject.GetItems());

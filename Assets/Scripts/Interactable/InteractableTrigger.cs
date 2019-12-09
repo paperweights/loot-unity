@@ -1,5 +1,4 @@
-﻿using System;
-using Ui;
+﻿using Ui;
 using UnityEngine;
 
 namespace Interactable
